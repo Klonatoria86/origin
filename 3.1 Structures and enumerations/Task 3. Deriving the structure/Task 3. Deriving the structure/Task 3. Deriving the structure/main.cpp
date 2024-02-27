@@ -17,24 +17,9 @@ void Print(addresses& addresses) {
 };
 int main() {
 	setlocale(LC_ALL, "rus");
-	addresses first;
-	addresses second;
-	addresses third;
-	first.city = "Москва";
-	second.city = "Уфа";
-	third.city = "Курган";
-	first.street = "Ленина";
-	second.street = "Демьяна-Бедного";
-	third.street = "Прутикова";
-	first.house = 45;
-	second.house = 54;
-	third.house = 33;
-	first.apartment = 124;
-	second.apartment = 87;
-	third.apartment = 33;
-	first.zip_code = 758297;
-	second.zip_code = 294740;
-	third.zip_code = 640023;
+	addresses first{ "Москва","Ленина",45,124,758297 };
+	addresses second{ "Уфа","Демьяна-Бедного",54,87,294740};
+	addresses third{ "Курган" ,"Прутикова" ,33,33,640023};
 	Print(first);
 	std::cout << std::endl;
 	Print(second);

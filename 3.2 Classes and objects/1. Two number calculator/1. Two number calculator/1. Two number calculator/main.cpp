@@ -48,13 +48,13 @@ int main() {
 		double num1, num2;
 		std::cout << "Введите num1: ";
 		std::cin >> num1;
-		if (!first.set_num1(num1)) {
+		while (!first.set_num1(num1)) {
 			std::cout << "Неверный ввод!\n" << "Введите num1: ";
 			std::cin >> num1;
 		}
 		std::cout << "Введите num2: ";
 		std::cin >> num2;
-		if (!first.set_num2(num2)) {
+		while (!first.set_num2(num2)) {
 			std::cout << "Неверный ввод!\n" << "Введите num2: ";
 			std::cin >> num2;
 		}

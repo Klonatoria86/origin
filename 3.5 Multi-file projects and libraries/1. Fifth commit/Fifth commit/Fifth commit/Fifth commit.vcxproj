@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{83e284fb-f52b-4447-af09-e41c3f64605f}</ProjectGuid>
-    <RootNamespace>ShapesSidesandcorners</RootNamespace>
+    <ProjectGuid>{1b9b039c-16e5-47a9-8c52-f90293e006c4}</ProjectGuid>
+    <RootNamespace>Fifthcommit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,23 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Figure.cpp" />
+    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Parallelogram.cpp" />
-    <ClCompile Include="Quadrangle.cpp" />
-    <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Equilateral_Triangle.h" />
-    <ClInclude Include="Figure.h" />
-    <ClInclude Include="Isosceles_Triangle.h" />
-    <ClInclude Include="Parallelogram.h" />
-    <ClInclude Include="Quadrangle.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Rhombus.h" />
-    <ClInclude Include="Right_Triangle.h" />
-    <ClInclude Include="Square.h" />
-    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="Functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

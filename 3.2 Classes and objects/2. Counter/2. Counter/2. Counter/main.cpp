@@ -1,26 +1,7 @@
 #include<iostream>
 #include<cstring>
 #include<iomanip>
-class Counter {
-private:
-	int meaning = 0;
-public:
-	void Increase1(){
-		meaning++;
-	}
-	void Decrease1() {
-		meaning--;
-	}
-	void Present_Value() {
-		std::cout << meaning<<std::endl;
-	}
-	void initial_Value1() {
-		meaning = 1;
-	}
-	void initialized_Value(int var) {
-		meaning = var;
-	}
-};
+#include"Classes.h"
 int main() {
 
 	setlocale(LC_ALL, "rus");

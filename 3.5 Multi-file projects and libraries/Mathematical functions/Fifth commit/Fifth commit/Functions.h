@@ -1,4 +1,5 @@
- double Addition(double, double);
+#pragma once
+double Addition(double, double);
  double Subtraction(double, double);
  double Multiplication(double, double);
  double Separation(double, double);

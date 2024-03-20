@@ -3,9 +3,7 @@
 class Figure {
 	short sides_count;
 protected:
-	Figure(short sides_count) {
-		this->sides_count = sides_count;
-	}
+	Figure(short);
 	std::string name;
 public:
 	Figure() : Figure(0) {}

@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include"Classes.h"
+#include"Counter.h"
 	void Counter::Increase1() {
 		meaning++;
 	}

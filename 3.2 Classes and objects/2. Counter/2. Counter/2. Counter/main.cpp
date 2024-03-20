@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cstring>
 #include<iomanip>
-#include"Classes.h"
+#include"Counter.h"
 int main() {
 
 	setlocale(LC_ALL, "rus");

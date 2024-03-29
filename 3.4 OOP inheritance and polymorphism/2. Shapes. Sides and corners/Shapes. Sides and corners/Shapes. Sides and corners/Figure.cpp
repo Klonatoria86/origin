@@ -1,6 +1,7 @@
 
 #include<iostream>
 #include"Figure.h"
+#include"Exc.h"
 Figure::Figure(short sides_count) {
 	this->sides_count = sides_count;
 }

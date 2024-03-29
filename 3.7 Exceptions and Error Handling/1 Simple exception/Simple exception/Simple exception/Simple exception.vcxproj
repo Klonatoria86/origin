@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{83e284fb-f52b-4447-af09-e41c3f64605f}</ProjectGuid>
-    <RootNamespace>ShapesSidesandcorners</RootNamespace>
+    <ProjectGuid>{ae54cd95-6ed1-49ed-89f0-f35e94e5b5db}</ProjectGuid>
+    <RootNamespace>Simpleexception</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,31 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Equilateral_Triangle.cpp" />
-    <ClCompile Include="Exc.cpp" />
-    <ClCompile Include="Figure.cpp" />
-    <ClCompile Include="Isosceles_Triangle.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Parallelogram.cpp" />
-    <ClCompile Include="Quadrangle.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="Rhombus.cpp" />
-    <ClCompile Include="Right_Triangle.cpp" />
-    <ClCompile Include="Square.cpp" />
-    <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="function.cpp" />
+    <ClCompile Include="Simple exception.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Equilateral_Triangle.h" />
-    <ClInclude Include="Exc.h" />
-    <ClInclude Include="Figure.h" />
-    <ClInclude Include="Isosceles_Triangle.h" />
-    <ClInclude Include="Parallelogram.h" />
-    <ClInclude Include="Quadrangle.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Rhombus.h" />
-    <ClInclude Include="Right_Triangle.h" />
-    <ClInclude Include="Square.h" />
-    <ClInclude Include="Triangle.h" />
+    <ClInclude Include="function.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

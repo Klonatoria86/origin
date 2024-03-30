@@ -19,7 +19,7 @@ int main() {
 		Triangle triangle(10, 20, 30, 50, 60, 70);
 		triangle.Print();
 	}
-	catch (My_Ex ex)
+	catch (My_Ex& ex)
 	{
 		std::cout << "Ошибка создания фигуры.Причина: " << ex.get_error() << std::endl;
 	}

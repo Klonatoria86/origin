@@ -73,9 +73,19 @@ public:
 		numerator_ += denominator_;
 		return Fraction(numerator_, denominator_);
 	}
-	Fraction operator --(int) {
+	Fraction operator --() {
 		numerator_ -= denominator_;
 		return Fraction(numerator_, denominator_);
+	}
+	Fraction operator ++(int) {
+		int x = numerator_;
+		numerator_ += denominator_;
+		return Fraction(x, denominator_);
+	}
+	Fraction operator --(int) {
+		int x = numerator_;
+		numerator_ -= denominator_;
+		return Fraction(x, denominator_);
 	}
 };
 void print(Fraction& f1, Fraction& f2, Fraction& f3,std::string sign) {

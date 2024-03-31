@@ -14,37 +14,37 @@ public:
 	}
 	friend void foo(Fraction& one, Fraction& to);
 	bool operator >(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ > right.numerator_)
 			return 1;
 		else return 0;
 	}
 	bool operator ==(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ == right.numerator_)
 			return 1;
 		else return 0;
 	}
 	bool operator !=(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ != right.numerator_)
 			return 1;
 		else return 0;
 	}
 	bool operator <(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ < right.numerator_)
 			return 1;
 		else return 0;
 	}
 	bool operator <=(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ <= right.numerator_)
 			return 1;
 		else return 0;
 	}
 	bool operator >=(Fraction right) {
-
+		foo(*this, right);
 		if (numerator_ >= right.numerator_)
 			return 1;
 		else return 0;
@@ -63,7 +63,6 @@ int main()
 {
 	Fraction f1(4, 3);
 	Fraction f2(6, 11);
-	foo(f1, f2);
 	std::cout << "f1" << ((f1 == f2) ? " == " : " not == ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 != f2) ? " != " : " not != ") << "f2" << '\n';
 	std::cout << "f1" << ((f1 < f2) ? " < " : " not < ") << "f2" << '\n';

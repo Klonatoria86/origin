@@ -12,6 +12,7 @@
 #include"Isosceles_Triangle.h"
 #include"Equilateral_Triangle.h"
 #include"Exc.h"
+
 int main() {
 	setlocale(LC_ALL, "Russian");
 	try
@@ -19,33 +20,82 @@ int main() {
 		Triangle triangle(10, 20, 30, 50, 60, 70);
 		triangle.Print();
 	}
-	catch (My_Ex& ex)
+	catch (const std::exception& ex)
 	{
-		std::cout << "Ошибка создания фигуры.Причина: " << ex.get_error() << std::endl;
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
 	}
 	try
 	{
 		Right_Triangle right_triangle(10, 20, 30, 50, 40);
 		right_triangle.Print();
 	}
-	catch (My_Ex ex)
+	catch (const std::exception& ex)
 	{
-		std::cout << "Ошибка создания фигуры.Причина: " << ex.get_error() << std::endl;
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
 	}
-	Isosceles_Triangle isosceles_triangle(10, 20, 50, 60);
-	isosceles_triangle.Print();
-	Equilateral_Triangle equilateral_triangle(30);
-	equilateral_triangle.Print();
-	Quadrangle quadrangle(10, 20, 30, 40, 50, 60,70,80);
-	quadrangle.Print();
-	Rectangle rectangle(10, 20);
-	rectangle.Print();
-	Square square(20);
-	square.Print();
-	Parallelogram parallelogram(20, 30, 30, 40);
-	parallelogram.Print();
-	Rhombus rhombus(30, 30, 40);
-	rhombus.Print();
-	
+	try
+	{
+		Isosceles_Triangle isosceles_triangle(10, 20, 50, 80);
+		isosceles_triangle.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Equilateral_Triangle equilateral_triangle(30);
+		equilateral_triangle.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Quadrangle quadrangle(10, 20, 30, 40, 50, 60, 70, 80);
+		quadrangle.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Rectangle rectangle(10, 20);
+		rectangle.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Square square(20);
+		square.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Parallelogram parallelogram(20, 30, 30, 40);
+		parallelogram.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}
+	try
+	{
+		Rhombus rhombus(30, 30, 40);
+		rhombus.Print();
+	}
+	catch (const std::exception& ex)
+	{
+		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
+	}	
+
 	return 0;
 }

@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+#include <exception>
 #include"function.h"
 int main() {
 	setlocale(LC_ALL, "Russian");
@@ -10,14 +11,11 @@ int main() {
 		std::cin >> str;
 		try
 		{
-			if ((str.length()) == forbidden_length) {
-				throw "Вы ввели слово запретной длины! До свидания";
-			}
 			std::cout << function(str, forbidden_length) << std::endl;
 		}
-		catch (const char* bad_length)
+		catch (const std::runtime_error& bad_length)
 		{
-			std::cout << bad_length;
+			std::cout << bad_length.what();
 		}
 	} while ((str.length()) != forbidden_length);
 	return 0;

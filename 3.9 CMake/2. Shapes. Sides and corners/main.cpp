@@ -96,6 +96,6 @@ int main() {
 	{
 		std::cout << "Ошибка создания фигуры.Причина: " << ex.what() << std::endl << std::endl;
 	}	
-
+	system("Pause");
 	return 0;
 }

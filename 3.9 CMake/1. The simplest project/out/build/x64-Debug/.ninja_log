@@ -1,0 +1,6 @@
+# ninja log v5
+2	535	7336551646833627	CMakeFiles/The_simplest_project.dir/main.cpp.obj	b8520d6bb0011be1
+536	817	7336551649502614	/bin/The_simplest_project.exe	666b340f3faa6d6a
+9	699	7336558025158527	build.ninja	8818147e4dfbebc8
+26	223	7336557722504495	E:/Уроки/с++/Базовое программирование на C++/Homework/3.9 CMake/1. The simplest project/out/build/bin/The_simplest_project.exe	ff35fce17ec5a782
+16	179	7336558025158527	build.ninja	8818147e4dfbebc8

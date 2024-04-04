@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+set(PROJECT_NAME The_simplest_project)
+set(SOURCES main.cpp Exc.cpp Equilateral_Triangle.cpp Figure.cpp Isosceles_Triangle.cpp Parallelogram.cpp Quadrangle.cpp Rectangle.cpp Rhombus.cpp Right_Triangle.cpp Square.cpp Triangle.cpp)
+set(HEADERS Equilateral_Triangle.h Exc.h Figure.h Isosceles_Triangle.h Parallelogram.h Quadrangle.h Rectangle.h Rhombus.h Right_Triangle.h Square.h Triangle.h)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
+project(${PROJECT_NAME})
+add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})

@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(project_v1)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
+include_directories(lib)
+set(SOURSE_EXE main.cpp)
+add_executable(project_v1 ${SOURSE_EXE})
+add_subdirectory(lib)
+target_link_libraries(project_v1 functions_lib functions_dll)

@@ -1,15 +1,15 @@
 #pragma once
 #include<string>
-#ifndef leaver_dll
-	#define LEAVER_LIB declspec(dllexmport)
+#ifdef leaver_dll
+	#define LEAVER_LIB __declspec(dllexport)
 #else
-	#define LEAVER_LIB declspec(dllimport)
+	#define LEAVER_LIB __declspec(dlliport)
 #endif 
 
 class Greeter
 {
 public:
-	LEAVER_LIB; std::string greet(std::string);
+	LEAVER_LIB std::string greet(std::string);
 
 private:
 	std::string name;

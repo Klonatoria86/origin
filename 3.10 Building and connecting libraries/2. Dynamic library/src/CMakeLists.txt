@@ -1,12 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
-
 project(Dynamic_library)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
- 
-include_directories(Leaver_dll)
-
+include_directories(leaver_dll)
 add_executable(Dynamic_library main.cpp)
-
-add_subdirectory(Leaver_dll)
-
+add_subdirectory(leaver_dll)
 target_link_libraries(Dynamic_library Leaver_dll)

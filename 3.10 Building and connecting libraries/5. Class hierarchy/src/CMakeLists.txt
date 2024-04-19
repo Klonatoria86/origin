@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.16)
+project(Dynamic_library)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ../bin)
+include_directories(class_dll)
+add_executable(Dynamic_library main.cpp)
+add_subdirectory(class_dll)
+target_link_libraries(Dynamic_library Class_dll)

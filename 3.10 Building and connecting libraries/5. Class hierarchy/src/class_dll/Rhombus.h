@@ -1,11 +1,11 @@
 #pragma once
 #include"Parallelogram.h"
-#ifdef CLASS_DLL_EXPORTS
-#define IN_API __declspec(dllexport)
+#ifdef dinamic_lib
+#define in_LIB __declspec(dllexport)
 #else
-#define IN_API __declspec(dllimport)
-#endif
+#define in_LIB __declspec(dllimport)
+#endif 
 class Rhombus : public Parallelogram {
 public:
-	IN_API Rhombus(short, short, short);
+	in_LIB Rhombus(short, short, short);
 };

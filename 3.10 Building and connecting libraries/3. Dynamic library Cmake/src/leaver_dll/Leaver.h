@@ -1,6 +1,6 @@
 #pragma once
 #include<string>
-#ifndef leaver_dll
+#ifdef leaver_dll
 	#define LEAVER_LIB __declspec(dllexport)
 #else
 	#define LEAVER_LIB __declspec(dllimport)

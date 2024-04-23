@@ -7,3 +7,4 @@ project(Leaver_dll_v1)
 set(SOURCE_DLL Leaver.cpp Leaver.h)
  
 add_library (Leaver_dll SHARED ${SOURCE_DLL})
+target_compile_definitions(Leaver_dll PRIVATE leaver_dll)

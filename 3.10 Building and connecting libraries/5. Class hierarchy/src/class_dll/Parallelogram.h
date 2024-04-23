@@ -1,11 +1,11 @@
 #pragma once
 #include"Quadrangle.h"
-#ifdef CLASS_DLL_EXPORTS
-#define IN_API __declspec(dllexport)
+#ifdef dinamic_lib
+#define in_LIB __declspec(dllexport)
 #else
-#define IN_API __declspec(dllimport)
-#endif
+#define in_LIB __declspec(dllimport)
+#endif 
 class Parallelogram : public Quadrangle {
 public:
-	IN_API Parallelogram(short, short, short, short);
+	in_LIB Parallelogram(short, short, short, short);
 };

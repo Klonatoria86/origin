@@ -1,11 +1,11 @@
 #pragma once
 #include"Rhombus.h"
-#ifdef CLASS_DLL_EXPORTS
-#define IN_API __declspec(dllexport)
+#ifdef dinamic_lib
+#define in_LIB __declspec(dllexport)
 #else
-#define IN_API __declspec(dllimport)
-#endif
+#define in_LIB __declspec(dllimport)
+#endif 
 class Square : public Rhombus {
 public:
-	IN_API Square(short);
+	in_LIB Square(short);
 };

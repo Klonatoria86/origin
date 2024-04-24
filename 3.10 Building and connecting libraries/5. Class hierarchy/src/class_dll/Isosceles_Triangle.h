@@ -1,4 +1,5 @@
 #pragma once
+#include"Triangle.h"
 #ifdef dinamic_lib
 #define in_LIB __declspec(dllexport)
 #else

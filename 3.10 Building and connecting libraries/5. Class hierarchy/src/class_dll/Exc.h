@@ -9,7 +9,7 @@
 #endif 
 class My_Ex : public std::exception{
 public:
-	in_LIB std::string error;
+	std::string error;
 	in_LIB My_Ex (std::string);
 	in_LIB const char* get_error();
 	in_LIB virtual const char* what() const override;

@@ -10,5 +10,6 @@
 		std::cin >> name;
 		Greeter f1;
 		std::cout << "До свидания, " << f1.greet(name) << "!" << std::endl;
+		system("Pause");
 		return 0;
 	}

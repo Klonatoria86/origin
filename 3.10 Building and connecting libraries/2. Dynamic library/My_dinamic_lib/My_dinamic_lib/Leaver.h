@@ -1,7 +1,7 @@
 
 #pragma once
 #include<string>
-#ifdef MY_DINAMIC_LIB_EXPORTS
+#ifdef MY_DINAMIC_LIB
 #define LEAVER_LIB __declspec(dllexport)
 #else
 #define LEAVER_LIB __declspec(dllimport)
